@@ -1,0 +1,6 @@
+[submodule "dependencies/ManiSkill"]
+	path = dependencies/ManiSkill
+	url = https://github.com/haosulab/ManiSkill.git
+[submodule "dependencies/RoboTwin"]
+	path = dependencies/RoboTwin
+	url = https://github.com/RoboTwin-Platform/RoboTwin.git

@@ -1,0 +1,30 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# --- OS / editor ---
+.DS_Store
+*.swp
+
+# --- logs / generated media ---
+*.log
+*.mp4
+*.tfevents.*
+
+# --- model checkpoints ---
+# Ignore all weights by default (training runs drop GBs of them), but keep the one
+# small demo checkpoint we intentionally ship for the notebooks. The submodules under
+# dependencies/ are opaque to this .gitignore, so their runs/ ckpts are unaffected here.
+*.pt
+*.ckpt
+*.safetensors
+!checkpoints/**/final_ckpt.pt
+
+# --- downloaded assets / data / generated outputs (in case anything lands at repo root) ---
+/data/
+/runs/
+demos/          # ManiSkill motion-planning --record-dir output (traj .h5 + mp4)
+*.zip
+*.h5
